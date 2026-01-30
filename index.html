@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nandu Kumar Koribilli | Windows 11 Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wallpaper"></div>
+
+    <main class="desktop" role="application">
+      <button class="desktop-icon" id="folderIcon" aria-label="Open portfolio folder">
+        <span class="icon-graphic">📁</span>
+        <span class="icon-label">Portfolio</span>
+      </button>
+
+      <section class="window" id="folderWindow" aria-hidden="true">
+        <header class="window-header">
+          <div class="window-title">
+            <span class="window-icon">📁</span>
+            Portfolio
+          </div>
+          <div class="window-actions">
+            <button class="window-action" data-action="minimize" aria-label="Minimize">—</button>
+            <button class="window-action" data-action="close" aria-label="Close">✕</button>
+          </div>
+        </header>
+        <div class="window-body">
+          <div class="folder-grid">
+            <button class="file-tile" data-file="details">
+              <span class="tile-icon">🧾</span>
+              <span>My Details</span>
+            </button>
+            <button class="file-tile" data-file="projects">
+              <span class="tile-icon">💻</span>
+              <span>My Projects</span>
+            </button>
+            <a class="file-tile" href="NanduKumar_Resume%20.pdf" target="_blank" rel="noreferrer">
+              <span class="tile-icon">📄</span>
+              <span>Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="window" id="contentWindow" aria-hidden="true">
+        <header class="window-header">
+          <div class="window-title">
+            <span class="window-icon" id="contentIcon">🧾</span>
+            <span id="contentTitle">Details</span>
+          </div>
+          <div class="window-actions">
+            <button class="window-action" data-action="minimize" aria-label="Minimize">—</button>
+            <button class="window-action" data-action="close" aria-label="Close">✕</button>
+          </div>
+        </header>
+        <div class="window-body" id="contentBody"></div>
+      </section>
+    </main>
+
+    <footer class="taskbar">
+      <div class="taskbar-left">
+        <button class="start-btn" aria-label="Start">⊞</button>
+        <button class="taskbar-btn" data-open="folderWindow">📁</button>
+        <button class="taskbar-btn" data-open="contentWindow">🧾</button>
+      </div>
+      <div class="taskbar-right">
+        <div class="taskbar-clock" id="clock"></div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
